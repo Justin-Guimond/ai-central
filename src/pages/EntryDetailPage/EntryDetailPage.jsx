@@ -42,8 +42,6 @@ export default function EntryDetailPage() {
     }
 
     async function handleUpdateEntry(updatedData) {
-        console.log("handleUpdateEntry called with id:", id);
-        console.log("updatedData:", updatedData);
         try {
           await updateEntry(entry._id, updatedData);
           // Refresh the entry details after updating
